@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cinzel&family=Playfair+Display:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Wedding</title>
+  </head>
+  <body class="venue-page-body">
+    <nav>
+      <img src="menu-icon.png" alt="menu icon">
+      <ul>
+        <li><a href="Our_wedding.html">Home</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="wedding-party.html">Wedding Party</a></li>
+        <li><a href="rsvp.html">RSVP</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 class="main-h1"><span class="h1-span">RSVP</span></h1>
+    </header>
+    <main>
+      <section class="rsvp_form">
+        <p>*Please fill out a separate form for each person on the invite.</p>
+        <form action="process.php" method="post">
+          First name: <input type="text" name="first_name"> <br />
+          Surname: <input type="text" name="last_name"> <br>
+          Are you able to attend? <select name="attend" id="">
+            <option value="n/a"></option>
+            <option value="ceremony">Just the Ceremony</option>
+            <option value="reception">Just the Reception</option>
+            <option value="both">The Whole Day</option>
+            <option value="no">Unable to attend</option>
+          </select>
+          <br>
+          Any dietary requirements? <input type="text" name="dietary_requirements"> <br>
+          What three songs would guarantee to get you up on the dancefloor?
+          <input type="text" name="song1">
+          <input type="text" name="song2">
+          <input type="text" name="song3">
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+      
+    </main>
+    <footer>
+      <p class="copy">&copy J & L</p>
+      <p class="date">15th June 2024</p>
+    </footer>
+  </body>
+</html>
